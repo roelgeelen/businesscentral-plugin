@@ -21,6 +21,7 @@ public class Customer {
     private String no;
     private String name;
     private String address;
+    private String CustomerTemplateCode;
     private String countryRegionCode;
     private String city;
     private String postCode;
@@ -28,13 +29,13 @@ public class Customer {
     private String eMail;
     private String genBusPostingGroup;
     private String vatBusPostingGroup;
-    private String customerPostingGroup;
+//    private String customerPostingGroup;
     private boolean allowLineDisc;
     private String paymentTermsCode;
     private String taxAreaID;
     private boolean taxLiable;
 
-    public void setNo(String no) {
-        this.no = "K" + no;
-    }
+//    public void setNo(String no) {
+//        this.no = "K" + no;
+//    }
 }

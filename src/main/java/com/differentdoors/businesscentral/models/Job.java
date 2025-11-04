@@ -24,12 +24,13 @@ public class Job {
     private String typeDeur;
     private String dealAmount;
     private String dealOwner;
+    private String leverdatum;
+    private String werkuren;
+    private String yourReference;
+    private String engineeringsUren;
+    private String productieUren;
 
     public void setNo(String no) {
         this.no = "P" + no;
-    }
-
-    public void setCustomerNo(String customerNo) {
-        this.customerNo = "K" + customerNo;
     }
 }
