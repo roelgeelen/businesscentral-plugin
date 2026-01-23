@@ -41,17 +41,6 @@ public class CustomerService {
                 .bodyToMono(String.class)
                 .onErrorResume(Mono::error)
                 .block();
-
-
-//        Map<String, String> urlParams = new HashMap<>();
-//        urlParams.put("path", "HUB_Customers");
-//
-//        UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(URL);
-//
-//        HttpHeaders headers = new HttpHeaders();
-//        headers.set("content-type", MediaType.APPLICATION_JSON_VALUE);
-//        HttpEntity<Object> entity = new HttpEntity<>(objectMapper.writeValueAsString(customer), headers);
-//        restTemplate.postForObject(builder.buildAndExpand(urlParams).toUri(), entity, String.class);
     }
 
     public String updateCustomer(String id, String etag, Customer customer) throws Exception {
@@ -62,16 +51,6 @@ public class CustomerService {
                 .retrieve()
                 .bodyToMono(String.class)
                 .block();
-//        Map<String, String> urlParams = new HashMap<>();
-//        urlParams.put("path", "HUB_Customers('" + id + "')");
-//
-//        UriComponentsBuilder builder = UriComponentsBuilder.fromUriString(URL);
-//
-//        HttpHeaders headers = new HttpHeaders();
-//        headers.set("content-type", MediaType.APPLICATION_JSON_VALUE);
-//        headers.set("If-Match", etag);
-//        HttpEntity<Object> entity = new HttpEntity<>(objectMapper.writeValueAsString(customer), headers);
-//        restTemplate.patchForObject(builder.buildAndExpand(urlParams).toUri(), entity, String.class);
     }
 
 }
